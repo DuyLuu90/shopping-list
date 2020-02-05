@@ -1,4 +1,4 @@
-function shoppingList() {
+$(function() {
 //enter items they need to purchase by entering text and hitting "Return" or clicking the "Add item" button
     $("#js-shopping-list-form").submit(event => {
         event.preventDefault();
@@ -32,9 +32,8 @@ function shoppingList() {
       </button>
     </div>
   </li>`);
+});
 
-}; 
-$(shoppingList);
 //submit()
 //preventDefault()
 //toggleClass(): add/remove one/more classes from each matched element (add when the class is NOT present, and remove when it is)
