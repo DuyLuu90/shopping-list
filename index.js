@@ -23,7 +23,7 @@ $(function() {
 
     //check and uncheck items on the list by clicking the "Check" button("shopping-item"=>"shopping-item shopping-item__checked")
     $('.shopping-list').on('click',"shopping-item-controls", event=>{
-        $(event.target).closest('.shopping-item').toggleClass("shopping-item__checked");
+        $('.shopping-item').toggleClass("shopping-item__checked");
         //if "shopping-item__checked" is already there, it will be removed
     });
 
